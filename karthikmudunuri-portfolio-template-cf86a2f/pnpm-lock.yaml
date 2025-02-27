@@ -35,6 +35,9 @@ importers:
       '@tailwindcss/line-clamp':
         specifier: ^0.4.2
         version: 0.4.4(tailwindcss@3.4.17)
+      animate.css:
+        specifier: ^4.1.1
+        version: 4.1.1
       framer-motion:
         specifier: ^10.6.1
         version: 10.18.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -753,6 +756,9 @@ packages:
 
   ajv@8.17.1:
     resolution: {integrity: sha512-B/gBuNg5SiMTrPkC+A2+cW0RszwxYmn6VYxB/inlBStS5nx6xHIt/ehKRhIMhqusl7a8LjQoZnjCs5vhwxOQ1g==}
+
+  animate.css@4.1.1:
+    resolution: {integrity: sha512-+mRmCTv6SbCmtYJCN4faJMNFVNN5EuCTTprDTAo7YzIGji2KADmakjVA3+8mVDkZ2Bf09vayB35lSQIex2+QaQ==}
 
   ansi-escapes@5.0.0:
     resolution: {integrity: sha512-5GFMVX8HqE/TB+FuBJGuO5XG0WrsA6ptUqoODaT/n9mmUaZFkqnBueB4leqGBCmrUHnCnC4PCZTCd0E7QQ83bA==}
@@ -3919,6 +3925,8 @@ snapshots:
       fast-uri: 3.0.6
       json-schema-traverse: 1.0.0
       require-from-string: 2.0.2
+
+  animate.css@4.1.1: {}
 
   ansi-escapes@5.0.0:
     dependencies:
