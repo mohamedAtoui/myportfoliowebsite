@@ -11,7 +11,7 @@ module.exports = {
       },
     ],
     "block-no-empty": null,
-    "unit-no-unknown": [true, { "ignoreUnits": ["em", "rem", "s"] }],
+    "unit-no-unknown": [true, { ignoreUnits: ["em", "rem", "s"] }],
   },
   ignoreFiles: ["node_modules/**", ".next"],
 };
