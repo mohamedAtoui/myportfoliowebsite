@@ -11,7 +11,7 @@ const syne = Inter({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.example.com/"),
-  title: "Portfolio template - Eldora UI",
+  title: "Mohamed Atoui - Portfolio",
   description:
     "Eldora UI is a portfolio template built with React, Typescript, Tailwind CSS, and Framer Motion. 100% open-source, and customizable.",
   generator: "Next.js",
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
   ],
   colorScheme: "dark",
   openGraph: {
-    title: "Portfolio template - Eldora UI",
+    title: "Mohamed Atoui Portfolio",
     description:
       "Eldora UI is a portfolio template built with React, Typescript, Tailwind CSS, and Framer Motion. 100% open-source, and customizable.",
     url: "https://www.eldoraui.site/",
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
         url: "./public/metadata.jpg",
         width: 1200,
         height: 630,
-        alt: "Portfolio template - Eldora UI",
+        alt: "Mohamed Atoui Portfolio",
       },
     ],
     locale: "en-US",
@@ -59,9 +59,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Portfolio template - Eldora UI",
+    title: "Mohamed Atoui Portfolio",
     description:
-      "Portfolio template - Eldora UI is a portfolio template built with React, Typescript, Tailwind CSS, and Framer Motion. 100% open-source, and customizable.",
+      "Mohamed Atoui Portfolio is a portfolio template built with React, Typescript, Tailwind CSS, and Framer Motion. 100% open-source, and customizable.",
     creator: "@karthikmudunuri",
     creatorId: "0000000000",
     images: ["./public/metadata.jpg"],

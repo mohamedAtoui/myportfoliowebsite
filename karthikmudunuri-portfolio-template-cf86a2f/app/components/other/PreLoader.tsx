@@ -52,7 +52,7 @@ const PreLoader: React.FC = () => {
           opacity: 0,
         }}
       >
-        <span className="text-xl font-bold">Welcome</span>
+        <span className="text-xl font-bold">Hellooo!</span>
       </div>
     </div>
   );
