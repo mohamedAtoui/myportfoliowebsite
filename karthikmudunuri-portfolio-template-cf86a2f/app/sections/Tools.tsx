@@ -8,19 +8,23 @@ import Image from "next/image";
 import {
   SiGit,
   SiGithub,
-  SiMysql,
-  SiJavascript,
   SiNextdotjs,
-  SiReact,
   SiTypescript,
-  SiMongodb,
-  SiNodedotjs,
   SiPython,
   SiTensorflow,
   SiPytorch,
   SiLinux,
+  SiJupyter,
+  SiNumpy,
+  SiPandas,
+  SiOpencv,
+  SiTailwindcss,
+  SiStreamlit,
+  SiGo,
+  SiPostgresql,
+  SiRedis,
+  SiC,
 } from "react-icons/si";
-import { DiJava } from "react-icons/di";
 
 const Tools = () => {
   return (
@@ -70,6 +74,10 @@ const Tools = () => {
                   alt="Hugging Face"
                   className="object-contain brightness-0 invert"
                 />
+                <SiJupyter size={50} />
+                <SiNumpy size={50} />
+                <SiPandas size={50} />
+                <SiOpencv size={50} />
               </AnimatedTools>
             </div>
           </div>
@@ -85,9 +93,9 @@ const Tools = () => {
                 iconSize={50}
               >
                 <SiTypescript size={50} />
-                <SiJavascript size={50} />
-                <SiReact size={50} />
                 <SiNextdotjs size={50} />
+                <SiTailwindcss size={50} />
+                <SiStreamlit size={50} />
               </AnimatedTools>
             </div>
           </div>
@@ -103,10 +111,10 @@ const Tools = () => {
                 iconSize={50}
               >
                 <SiPython size={50} />
-                <DiJava size={50} />
-                <SiNodedotjs size={50} />
-                <SiMysql size={50} />
-                <SiMongodb size={50} />
+                <SiGo size={50} />
+                <SiC size={50} />
+                <SiPostgresql size={50} />
+                <SiRedis size={50} />
               </AnimatedTools>
             </div>
           </div>

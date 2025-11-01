@@ -46,7 +46,7 @@
     linear-gradient(
         var(--angle, 0deg),
         rgb(255 255 255 / 0%),
-        rgb(255 255 255 / 20%)
+        rgb(255 255 255 / 3%)
       )
       border-box;
   mask: linear-gradient(#fff, #fff) padding-box, linear-gradient(#fff, #fff);

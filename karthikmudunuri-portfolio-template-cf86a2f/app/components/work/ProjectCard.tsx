@@ -19,6 +19,7 @@ const ProjectCard = ({
   demo,
   image,
   available,
+  tags,
 }: ProjectProps) => {
   return (
     <motion.div
@@ -37,16 +38,25 @@ const ProjectCard = ({
         left="0px"
         angle={0}
       >
-        <Image
-          src={image}
-          alt={name}
-          width={500}
-          height={500}
-          className={`absolute -bottom-2 w-[70%] sm:w-[85%] md:w-[60%] lg:max-w-[55%] ${
-            id % 2 === 0 ? "right-0" : "left-0"
-          }`}
-          priority={true}
-        />
+        {image && (
+          <Image
+            src={image}
+            alt={name}
+            width={500}
+            height={500}
+            className={`absolute -bottom-2 ${
+              // Make LLM Journey slightly bigger but not too much
+              id === 3
+                ? "w-[75%] sm:w-[88%] md:w-[65%] lg:max-w-[60%]"
+                : // Zoom out (show full image) for specific projects
+                [4, 5, 6, 9, 10, 11].includes(id)
+                ? "w-[70%] sm:w-[85%] md:w-[60%] lg:max-w-[55%] object-contain"
+                : // Default sizing
+                  "w-[70%] sm:w-[85%] md:w-[60%] lg:max-w-[55%]"
+            } ${id % 2 === 0 ? "right-0" : "left-0"}`}
+            priority={true}
+          />
+        )}
         <div
           className={`absolute top-0 text-[#0E1016] ${
             id % 2 === 0 ? "left-0 ml-8 lg:ml-14" : "right-0 mr-8 lg:mr-14"
@@ -67,19 +77,21 @@ const ProjectCard = ({
               >
                 <SiGithub />
               </Link>
-              <Link
-                href={demo}
-                target="_blank"
-                aria-label="Open Live Demo"
-                className=" w-[43px] rounded-full bg-white p-3 md:p-5 text-[20px] md:w-[65px] md:text-[24px] lg:w-[65px] lg:text-[28px]"
-                data-blobity
-                data-blobity-radius="35"
-                data-blobity-offset-x="4"
-                data-blobity-offset-y="4"
-                data-blobity-magnetic="false"
-              >
-                <BsLink45Deg />
-              </Link>
+              {demo && (
+                <Link
+                  href={demo}
+                  target="_blank"
+                  aria-label="Open Live Demo"
+                  className=" w-[43px] rounded-full bg-white p-3 md:p-5 text-[20px] md:w-[65px] md:text-[24px] lg:w-[65px] lg:text-[28px]"
+                  data-blobity
+                  data-blobity-radius="35"
+                  data-blobity-offset-x="4"
+                  data-blobity-offset-y="4"
+                  data-blobity-magnetic="false"
+                >
+                  <BsLink45Deg />
+                </Link>
+              )}
             </>
           ) : (
             <div></div>
@@ -88,8 +100,8 @@ const ProjectCard = ({
         <div
           className={`absolute text-white  ${
             !(id % 2 === 0)
-              ? "right-0 top-32 mr-0 ml-10 md:right-0 md:ml-0 lg:right-0 lg:top-60  lg:mr-4"
-              : "left-10 top-32 ml-0 md:mr-12 lg:top-52 lg:ml-4"
+              ? "right-0 top-24 mr-0 ml-10 md:right-0 md:ml-0 lg:right-0 lg:top-32  lg:mr-4"
+              : "left-10 top-24 ml-0 md:mr-12 lg:top-28 lg:ml-4"
           } mb-10  md:mb-16 lg:mb-14 `}
         >
           <AnimatedTitle
@@ -103,7 +115,7 @@ const ProjectCard = ({
           <AnimatedBody
             text={description}
             className={
-              "mt-4 w-[90%] max-w-[457px] text-[16px] font-semibold text-[#95979D] "
+              "mt-4 w-[90%] max-w-[457px] text-[17px] font-bold text-white"
             }
           />
           <div className="mt-9 mb-9 grid grid-cols-5 gap-5 col-start-1 col-end-2">

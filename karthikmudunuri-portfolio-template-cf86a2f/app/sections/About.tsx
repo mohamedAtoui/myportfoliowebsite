@@ -21,7 +21,7 @@ const About = () => {
 
         <div className="mx-auto flex w-[100%] flex-col lg:max-w-[1200px] lg:flex-row lg:gap-20">
           <div className="mb-10 flex w-[100%] flex-col gap-4 text-[18px] font-medium  leading-relaxed tracking-wide text-[#e4ded7] md:mb-16 md:gap-6 md:text-[20px] md:leading-relaxed lg:mb-16  lg:max-w-[90%] lg:text-[24px] ">
-            <AnimatedBody text="A passionate and driven Computer Science & AI student at Royal Holloway University of London, I thrive at the intersection of AI, full-stack development and cybersecurity, constantly pushing boundaries to create innovative, impact-driven solutions. From researching AI-driven vehicle security to building intelligent automation tools, I embrace every challenge as an opportunity to grow. With strong skills in AI and web development, I am committed to refining my expertise, solving real-world problems, and transforming bold ideas into reality. My philosophy? Never settle—learn, adapt, and evolve." />
+            <AnimatedBody text="In this portfolio you will see a brief reflection of who I am through different projects: some which are for learning purposes, some which I tried to make a product/business but I failed, and some which became a business which I am still working on. This portfolio reflects hours of hard work which I don't regret a single hour I've spent. I am in my final year as a CS/AI student at Royal Holloway University of London, ready to contribute to the world and leave a positive impact." />
           </div>
         </div>
       </div>
