@@ -32,9 +32,9 @@ export type ProjectProps = {
 export const projects = [
   {
     id: 0,
-    name: "Adaptive",
+    name: "Nordlys Labs",
     description:
-      "Intelligent model routing system that cuts AI inference costs by 70-80% by analyzing prompt complexity. Supports multi-provider routing across OpenAI, Anthropic, Gemini, Groq, and others. Secured 320+ signups and selection by Antler accelerator as a validated startup.",
+      "Intelligent model routing system that cuts AI inference costs by 70-80% by analyzing prompt complexity. Supports multi-provider routing across OpenAI, Anthropic, Gemini, Groq, and others.",
     technologies: [SiGo, SiPython, SiNextdotjs, SiTypescript, SiRedis, SiPostgresql],
     techNames: ["Go", "Python", "Next.js", "TypeScript", "Redis", "PostgreSQL"],
     techLinks: [
@@ -45,8 +45,8 @@ export const projects = [
       "https://redis.io/",
       "https://www.postgresql.org/",
     ],
-    github: "https://github.com/Egham-7/adaptive",
-    demo: "https://llmadaptive.uk/",
+    github: "https://github.com/Nordlys-Labs",
+    demo: "https://www.nordlyslabs.com/",
     image: "/projects/Adaptive.png",
     available: true,
     tags: ["AI/Machine Learning", "Web Development", "Product Development"],
@@ -63,8 +63,8 @@ export const projects = [
       "https://tailwindcss.c",
       "https://www.langchain.com/",
     ],
-    github: "https://github.com/Egham-7/StudentCopilot",
-    demo: "https://www.studentcopilot.app/",
+    github: "",
+    demo: "",
     image: "/projects/studentcopilot.png",
     available: true,
     tags: ["AI/Machine Learning", "Web Development", "Product Development"],

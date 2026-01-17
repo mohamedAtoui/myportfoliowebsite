@@ -64,19 +64,21 @@ const ProjectCard = ({
         >
           {available ? (
             <>
-              <Link
-                href={github}
-                target="_blank"
-                aria-label="Open GitHub Repository"
-                className="rounded-full w-[43px] bg-white p-3 md:p-5 text-[20px] md:w-[65px] md:text-[24px] lg:w-[65px] lg:text-[28px]"
-                data-blobity
-                data-blobity-radius="35"
-                data-blobity-offset-x="4"
-                data-blobity-offset-y="4"
-                data-blobity-magnetic="false"
-              >
-                <SiGithub />
-              </Link>
+              {github && (
+                <Link
+                  href={github}
+                  target="_blank"
+                  aria-label="Open GitHub Repository"
+                  className="rounded-full w-[43px] bg-white p-3 md:p-5 text-[20px] md:w-[65px] md:text-[24px] lg:w-[65px] lg:text-[28px]"
+                  data-blobity
+                  data-blobity-radius="35"
+                  data-blobity-offset-x="4"
+                  data-blobity-offset-y="4"
+                  data-blobity-magnetic="false"
+                >
+                  <SiGithub />
+                </Link>
+              )}
               {demo && (
                 <Link
                   href={demo}
